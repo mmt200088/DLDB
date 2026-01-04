@@ -1,0 +1,15 @@
+{
+  "version": 6,
+  "configurePresets": [{
+    "name": "linux-debug",
+    "generator": "Ninja",
+    "binaryDir": "${sourceDir}/build",
+    "cacheVariables": {
+      "CMAKE_BUILD_TYPE": "Debug",
+      "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+      "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/install",
+      "SEAL_DIR": "/var/tmp/root-home/EzPC/SCI/build/lib/cmake/SEAL-4.1"
+    },
+    "environment": { "CC": "/usr/bin/gcc", "CXX": "/usr/bin/g++" }
+  }]
+}

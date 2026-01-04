@@ -33,6 +33,7 @@ public:
 
     void layer_norm(int nthreads, uint64_t* input, uint64_t* output, uint64_t* weight, uint64_t* bias, int dim, int array_size, int ell, int s);
 
+    // TODO: Do sampling according to the input value distribution for low degrees (high robust)
     void gelu(int nthreads, uint64_t* input, uint64_t* output, int size, int ell, int s);
     void gelu_iron(int nthreads, uint64_t* input, uint64_t* output, int size, int ell, int s);
 

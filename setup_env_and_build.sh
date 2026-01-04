@@ -159,7 +159,7 @@ eval `opam env`
 make
 
 #Build ABY
-git clone --recursive https://github.com/encryptogroup/ABY.git
+git clone --recursive git@github.com:encryptogroup/ABY.git
 cd ABY/
 mkdir build && cd build
 cmake -DCMAKE_INSTALL_PREFIX=./install -DABY_BUILD_EXE=On ..
